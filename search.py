@@ -17,7 +17,8 @@ coords, delta = geocoder.get_ll_span(toponym_to_find)
 map_params = {
     "ll": coords,
     "spn": delta,
-    "l": "map"
+    "l": "map",
+    "pt": "{0},pm2dgl".format(coords)
 }
 
 map_api_server = "http://static-maps.yandex.ru/1.x/"
